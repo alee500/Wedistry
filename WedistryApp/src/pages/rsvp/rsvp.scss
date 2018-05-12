@@ -1,0 +1,66 @@
+page-rsvp {
+	
+	h3 {
+		padding-top: 10px;
+	}
+	
+	h4 {
+		padding-top: 20px; 
+	}
+	
+	.wed-submit {
+		margin: 0 auto;
+		padding-top: 50px;
+		text-align: center;
+		
+		button {
+			padding: 10px 25px;
+			font-family: 'Lato700', sans-serif !important;
+			font-size: 14px;
+			color: lighten($lightblue, 15%);
+			line-height: 32px;
+			letter-spacing: 3px;
+			text-transform: uppercase;
+			background: black;
+			border-radius: 5px;
+		}
+	}
+	
+	table {
+		margin: 0 auto;
+		padding: 0;
+		margin-top: 50px;
+		width: 100%;
+		max-width: 400px;
+		list-style: none;
+		
+		td {
+			padding: 5px 0;
+			text-align: right;
+			
+			&:first-child {
+				text-align: left;
+			}
+		}
+		
+		button {
+			font-size: 25px;
+			color: $darkblue;
+			background: transparent;
+
+			&.remove {
+				color: $lightblue;
+			}
+		}
+		
+		input {
+			padding: 4px;
+			width: 40px;
+			color: black;
+			text-align: center;
+			background: white;
+			border-radius: 3px;
+			border: 1px solid $lightblue;
+		}
+	}
+}

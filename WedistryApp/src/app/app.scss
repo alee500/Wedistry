@@ -1,0 +1,173 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+
+// ADD CUSTOM ICONS
+
+ion-icon {
+	&[class*="wed-"] {
+		mask-size: contain;
+		mask-position: 50% 50%;
+		mask-repeat: no-repeat;
+		background: currentColor;
+		width: 1em;
+		height: 1em;
+	}
+	// custom icons
+	&[class*="wed-home"] {
+		mask-image: url("../assets/imgs/home.svg");
+	}
+	&[class*="wed-invitations"] {
+		mask-image: url("../assets/imgs/invite.svg");
+	}
+	&[class*="wed-registry"] {
+		mask-image: url("../assets/imgs/gift.svg");
+	}
+	&[class*="wed-rsvp"] {
+		mask-image: url("../assets/imgs/envelope.svg");
+	}
+	&[class*="wed-video"] {
+		mask-image: url("../assets/imgs/video.svg");
+	}
+	&[class*="wed-leaf"] {
+		mask-image: url("../assets/imgs/leaf.svg");
+	}
+}
+	
+// SET LATO FONT
+
+@font-face {
+	font-family: LatoRegular;
+	src: url("../assets/fonts/lato-v14-latin-regular.ttf");
+}
+
+@font-face {
+	font-family: Lato700;
+	src: url("../assets/fonts/lato-v14-latin-700.ttf");
+}
+
+
+////// GLOBAL STYLES
+
+
+// TOP NAVIGATION
+
+.tabs-md .tab-button-icon {
+	min-width: 3rem;
+	font-size: 3rem;
+}
+
+ion-tabs {
+
+}
+
+// CONTENT AREA
+
+.app-content {
+	color: $font-color;
+	font-size: 16px;
+	background-image: url('../assets/imgs/app-bg.jpg');
+	background-size: cover;
+	background-position: center center;
+	
+	p {
+		font-family: 'LatoRegular', sans-serif !important;
+	}
+	
+	h2 {
+		font-family: 'Lato700', sans-serif !important;
+	}
+	
+	.app-main {
+		margin: 0 auto;
+		
+		.app-wrapper {
+			margin: 0 auto;
+			width: 90%;
+			max-width: 500px;
+		}
+	}
+}
+
+.md {
+	.app-content {
+		.app-main {
+			padding-top: 20px;
+		}
+	}
+}
+
+// FOOTER BAR
+
+ion-footer {
+	
+	.button {
+		width: 12%;
+		font-size: 25px;
+		text-align: center;
+		color: $darkblue;
+		background: white;
+		
+		&.inactive {
+			color: lighten($lightblue, 20%);
+		}
+	}
+
+	.center {
+		width: 76%;
+		text-align: center;
+		color: $footer-color;
+		font-size: 18px;
+	}
+}
+
+// ELEMENTS
+
+h3 {
+	font-size: 24px;
+	font-weight: 300;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h4 {
+	font-size: 18px;
+	font-weight: 300;
+	text-align: center;
+}
+
+.add-pad {
+	padding: 10px 0;
+}
+
+.verse {
+	margin-bottom: 20px;
+	text-align: center;
+	font-size: 15px;
+	font-style: italic;
+}
+
+.blue-leaf {
+	text-align: center;
+	
+	img {
+		width: 35%;
+		max-width: 200px;
+		height: auto;
+	}
+}
+

@@ -1,0 +1,45 @@
+page-home {
+	
+	h3 {
+		padding: 10px 0;
+	}
+	
+	.couple-photo {
+		position: relative;
+		text-align: center;
+		margin: 0 auto;
+		margin-bottom: 30px;
+		margin-top: 20px;
+		width: 85%;
+		max-width: 400px;
+
+		.name {
+			position: absolute;
+			padding: 5px 15px;
+			font-size: 14px;
+			line-height: 24px;
+			color: $darkblue;
+			background: white;
+			border-radius: 12px;
+			border: 2px solid $lightblue;
+
+			&.top {
+				top: 5px;
+				left: -15px;
+			}
+
+			&.bottom {
+				bottom: 25px;
+				right: -15px;
+			}
+		}
+
+		img {
+			margin: 0 auto;
+			width: 100%;
+			height: auto;
+			border-radius: 100%;
+			border: 4px solid $lightblue;
+		}
+	}
+}
