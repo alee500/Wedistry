@@ -1,6 +1,42 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  	<button ion-button clear class="top-button">
+			<ion-icon name="wed-home" class="top-icon home"></ion-icon>
+		</button>
+		<button ion-button clear class="top-button">
+			<ion-icon name="wed-invitations" class="top-icon invitations"></ion-icon>
+		</button>
+		<button ion-button clear class="top-button">
+			<ion-icon name="wed-rsvp" class="top-icon rsvp"></ion-icon>
+		</button>
+		<button ion-button clear class="top-button">
+			<ion-icon name="wed-registry" class="top-icon registry"></ion-icon>
+		</button>
+		<button ion-button clear class="top-button">
+			<ion-icon name="wed-calendar" class="top-icon calendar"></ion-icon>
+		</button>
+  </ion-navbar>
+</ion-header>
+
 <ion-content padding class="app-content">
 	<div class="app-main">
-		<h2>Invitation</h2>
-		<p>This is the invitation page screen.</p>
+		<h3>Invitation</h3>
 	</div>
 </ion-content>
+
+<ion-footer>
+		<ion-toolbar toolbarPosition="bottom">
+			<ion-segment [(ngModel)]="viewMode" >
+				<button class="button inactive">
+					<ion-icon name="arrow-back"></ion-icon>
+				</button>
+				<div class="center">#AaronAndKiah</div>
+				<button class="button">
+					<ion-icon name="arrow-forward"></ion-icon>
+				</button>
+			</ion-segment>
+		</ion-toolbar>
+</ion-footer>

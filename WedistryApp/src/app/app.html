@@ -1,15 +1,19 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
 
-<ion-footer class="app-footer">
-	<ion-toolbar toolbarPosition="bottom">
-		<ion-segment [(ngModel)]="viewMode" >
-			<button class="button inactive">
-				<ion-icon name="arrow-back"></ion-icon>
-			</button>
-			<div class="center">#AaronAndKiah</div>
-			<button class="button">
-				<ion-icon name="arrow-forward"></ion-icon>
-			</button>
-		</ion-segment>
-	</ion-toolbar>
-</ion-footer>
+  <ion-content>
+    <ion-list>
+      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        {{p.title}}
+      </button>
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

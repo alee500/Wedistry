@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the InvitationPage page.
+ * Generated class for the LogoutPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,16 +10,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-invitation',
-  templateUrl: 'invitation.html',
+  selector: 'page-logout',
+  templateUrl: 'logout.html',
 })
-export class InvitationPage {
+export class LogoutPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad InvitationPage');
+    console.log('ionViewDidLoad LogoutPage');
   }
 
 }

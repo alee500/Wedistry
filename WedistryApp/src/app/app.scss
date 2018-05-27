@@ -43,6 +43,9 @@ ion-icon {
 	&[class*="wed-video"] {
 		mask-image: url("../assets/imgs/video.svg");
 	}
+	&[class*="wed-calendar"] {
+		mask-image: url("../assets/imgs/calendar.svg");
+	}
 	&[class*="wed-leaf"] {
 		mask-image: url("../assets/imgs/leaf.svg");
 	}
@@ -66,13 +69,39 @@ ion-icon {
 
 // TOP NAVIGATION
 
-.tabs-md .tab-button-icon {
-	min-width: 3rem;
-	font-size: 3rem;
-}
+ion-header {
+	
+	.button-inner {
+		color: $tab-inactive;
+	}
+	
+	.bar-button-menutoggle-md ion-icon,
+	.bar-button-menutoggle-ios ion-icon {
+		font-size: 3.2rem;
+	}
+	
+	.toolbar-content,
+	.toolbar-content-ios {
+		display: flex;
+		justify-content: space-around;
+	}
+	
+	.top-button {
+		padding: 0;
+		
+		&:last-child {
+			padding-right: 0.3em;
+		}
+	}
 
-ion-tabs {
+	.top-icon {
+		color: $tab-inactive;
+	}
 
+	ion-icon[class*="wed-"] {
+		font-size: 3rem;
+	}
+	
 }
 
 // CONTENT AREA
@@ -80,7 +109,7 @@ ion-tabs {
 .app-content {
 	color: $font-color;
 	font-size: 16px;
-	background-image: url('../assets/imgs/app-bg.jpg');
+	background-image: url('../assets/imgs/main-background.jpg');
 	background-size: cover;
 	background-position: center center;
 	
@@ -94,6 +123,7 @@ ion-tabs {
 	
 	.app-main {
 		margin: 0 auto;
+		padding-top: 10px;
 		
 		.app-wrapper {
 			margin: 0 auto;
@@ -106,7 +136,7 @@ ion-tabs {
 .md {
 	.app-content {
 		.app-main {
-			padding-top: 20px;
+			
 		}
 	}
 }
@@ -114,6 +144,11 @@ ion-tabs {
 // FOOTER BAR
 
 ion-footer {
+	
+	.toolbar-background-md,
+	.toolbar-background-ios {
+		background: white;
+	}
 	
 	.button {
 		width: 12%;
@@ -129,9 +164,11 @@ ion-footer {
 
 	.center {
 		width: 76%;
+		height: 100%;
 		text-align: center;
-		color: $footer-color;
 		font-size: 18px;
+		line-height: 42px;
+		color: $footer-color;
 	}
 }
 

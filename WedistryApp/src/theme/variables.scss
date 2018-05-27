@@ -15,14 +15,6 @@ $app-direction: ltr;
 @import "ionic.globals";
 
 
-// Shared Variables
-// --------------------------------------------------
-// To customize the look and feel of this app, you can override
-// the Sass variables found in Ionic's source scss files.
-// To view all the possible Ionic variables, see:
-// http://ionicframework.com/docs/theming/overriding-ionic-variables/
-
-
 // GENERAL COLORS
 
 $darkblue: #106a87;
@@ -51,7 +43,7 @@ $tabs-ios-tab-padding: 15px 0;
 
 // FOOTER STYLES
 
-$toolbar-background: white;
+$toolbar-background: rgba(15, 74, 162, 0.5);
 
 
 // Named Color Variables
