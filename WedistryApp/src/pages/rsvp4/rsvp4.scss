@@ -1,0 +1,66 @@
+.ios {
+	ion-icon {
+		margin-top: -7px;
+		font-size: 32px;
+	}
+}
+
+page-rsvp4 {
+	
+
+	
+	h3 {
+		padding-top: 30px;
+		padding-bottom: 20px;
+		font-size: 28px;
+		border-bottom: 1px solid rgba(0,0,0,0.1);
+	}
+	
+	.wed-submit {
+		margin: 0 auto;
+		padding-top: 60px;
+		text-align: center;
+		
+		button {
+			padding: 10px 25px;
+			font-family: 'Lato700', sans-serif !important;
+			font-size: 14px;
+			color: lighten($lightblue, 15%);
+			line-height: 32px;
+			letter-spacing: 3px;
+			text-transform: uppercase;
+			background: black;
+			border-radius: 5px;
+		}
+	}
+	
+	table {
+		margin: 0 auto;
+		padding: 0;
+		margin-top: 50px;
+		width: 90%;
+		max-width: 400px;
+		list-style: none;
+		
+		td {
+			padding: 5px 0;
+			font-family: 'LatoRegular', sans-serif !important;
+			text-align: right;
+			
+			&:first-child {
+				text-align: left;
+			}
+		}
+		
+		.checkbox {
+			float: right;
+			padding: 4px;
+			width: 30px;
+			height: 30px;
+			text-align: center;
+			background: white;
+			border-radius: 3px;
+			border: 1px solid $lightblue;
+		}
+	}
+}

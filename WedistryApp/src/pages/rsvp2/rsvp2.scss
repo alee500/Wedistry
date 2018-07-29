@@ -1,0 +1,64 @@
+page-rsvp2 {
+	
+	h3 {
+		padding-top: 30px;
+	}
+	
+	h4 {
+		padding-top: 20px;
+		padding-bottom: 30px;
+	}
+	
+	.wed-submit {
+		margin: 0 auto;
+		padding-top: 80px;
+		text-align: center;
+		
+		button {
+			padding: 10px 25px;
+			font-family: 'Lato700', sans-serif !important;
+			font-size: 14px;
+			color: lighten($lightblue, 15%);
+			line-height: 32px;
+			letter-spacing: 3px;
+			text-transform: uppercase;
+			background: black;
+			border-radius: 5px;
+		}
+	}
+	
+	table {
+		margin: 0 auto;
+		padding: 0;
+		width: 90%;
+		max-width: 400px;
+		list-style: none;
+		
+		td {
+			padding: 7px 0;
+			text-align: right;
+			font-family: 'LatoRegular', sans-serif !important;
+			
+			&:first-child {
+				padding-right: 25px;
+				text-align: left;
+			}
+		}
+
+		input {
+			padding: 4px 10px;
+			width: 100%;
+			color: black;
+			text-align: left;
+			background: white;
+			border-radius: 3px;
+			border: 1px solid $lightblue;
+		}
+		
+		&.number {
+			input {
+				width: 100px;
+			}
+		}
+	}
+}

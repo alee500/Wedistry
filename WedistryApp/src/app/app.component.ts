@@ -10,8 +10,11 @@ import { JoinPage } from '../pages/join/join';
 import { LogoutPage } from '../pages/logout/logout';
 
 import { InvitationPage } from '../pages/invitation/invitation';
-import { RegistryPage } from '../pages/registry/registry';
 import { RsvpPage } from '../pages/rsvp/rsvp';
+import { Rsvp2Page } from '../pages/rsvp2/rsvp2';
+import { Rsvp3Page } from '../pages/rsvp3/rsvp3';
+import { Rsvp4Page } from '../pages/rsvp4/rsvp4';
+import { RegistryPage } from '../pages/registry/registry';
 import { CalendarPage } from '../pages/calendar/calendar';
 
 @Component({
@@ -35,8 +38,11 @@ export class MyApp {
       { title: 'Join', component: JoinPage },
       { title: 'Logout', component: LogoutPage },
       { title: 'Invitation', component: InvitationPage },
-      { title: 'Registry', component: RegistryPage },
       { title: 'RSVP', component: RsvpPage },
+      { title: 'RSVP 2', component: Rsvp2Page },
+      { title: 'RSVP 3', component: Rsvp3Page },
+      { title: 'RSVP 4', component: Rsvp4Page },
+      { title: 'Registry', component: RegistryPage },
       { title: 'Calendar', component: CalendarPage }
     ];
 

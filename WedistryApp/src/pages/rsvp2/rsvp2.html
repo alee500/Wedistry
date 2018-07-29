@@ -23,19 +23,28 @@
 
 <ion-content padding class="app-content">
 	<div class="app-main">
-		<h3>You're Invited!</h3>
-		<h4>Please RSVP to continue...</h4>
-		<div class="btn btn-reply btn-all">
-			<button>Yes, we're all in!</button>
-		</div>
-		<div class="btn btn-reply btn-ceremony">
-			<button>Just the ceremony</button>
-		</div>
-		<div class="btn btn-cannot">
-			<button>Regretfully, we cannot attend</button>
-		</div>
-		<div class="btn btn-submit">
-			<button>Confirm</button>
+		<div class="app-wrapper">
+			<h3>You're Invited!</h3>
+			<h4>Confirm your info</h4>
+			<table>
+				<tr>
+					<td>Name</td>
+					<td><input type="text" /></td>
+				</tr>
+				<tr>
+					<td>Email</td>
+					<td><input type="text" /></td>
+				</tr>
+			</table>
+			<table class="number">
+				<tr>
+					<td>Number of Guests</td>
+					<td><input type="text" /></td>
+				</tr>
+			</table>
+			<div class="wed-submit">
+				<button>Confirm</button>
+			</div>
 		</div>
 	</div>
 </ion-content>

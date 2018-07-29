@@ -66,6 +66,36 @@ ion-icon {
 
 ////// GLOBAL STYLES
 
+// SIDE MENU
+
+.menu-inner {
+	
+	.scroll-content {
+		background: $menu-background;
+	}
+	
+	font-family: 'LatoRegular', sans-serif !important;
+	
+	.toolbar {
+		color: white;
+		background-color: #2c4169;
+		
+		& > div {
+			background-color: transparent;
+		}
+	}
+	
+	.item {
+		color: rgba(255,255,255,0.7);
+		background-color: $menu-background;
+		border-bottom: 1px solid rgba(255,255,255,0.15);
+		
+		.item-inner {
+			border-bottom: none;
+		}
+	}
+}
+
 
 // TOP NAVIGATION
 

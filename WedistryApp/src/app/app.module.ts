@@ -11,8 +11,11 @@ import { JoinPage } from '../pages/join/join';
 import { LogoutPage } from '../pages/logout/logout';
 
 import { InvitationPage } from '../pages/invitation/invitation';
-import { RegistryPage } from '../pages/registry/registry';
 import { RsvpPage } from '../pages/rsvp/rsvp';
+import { Rsvp2Page } from '../pages/rsvp2/rsvp2';
+import { Rsvp3Page } from '../pages/rsvp3/rsvp3';
+import { Rsvp4Page } from '../pages/rsvp4/rsvp4';
+import { RegistryPage } from '../pages/registry/registry';
 import { CalendarPage } from '../pages/calendar/calendar';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -27,8 +30,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 		JoinPage,
 		LogoutPage,
 		InvitationPage,
-		RegistryPage,
 		RsvpPage,
+		Rsvp2Page,
+		Rsvp3Page,
+		Rsvp4Page,
+		RegistryPage,
 		CalendarPage
   ],
   imports: [
@@ -44,8 +50,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 		JoinPage,
 		LogoutPage,
 		InvitationPage,
-		RegistryPage,
 		RsvpPage,
+		Rsvp2Page,
+		Rsvp3Page,
+		Rsvp4Page,
+		RegistryPage,
 		CalendarPage		
   ],
   providers: [

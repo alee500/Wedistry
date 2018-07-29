@@ -25,19 +25,15 @@ $lightblue: #6abde0;
 $font-color: darken($darkblue, 5%);
 $footer-color: $lightblue;
 
+// MENU STYLES
+
+$menu-background: #455d8a;
+
 // TAB STYLES
 
 $tab-active: rgba(255, 255, 255, 0.8);
 $tab-inactive: #b8c7e5;
 $tabs-background: rgba(15, 74, 162, 0.5);
-
-$tabs-md-tab-color-active: $tab-active;
-$tabs-ios-tab-color-active: $tab-active;
-$tabs-wp-tab-color-active: $tab-active;
-
-$tabs-md-tab-color-inactive: $tab-inactive;
-$tabs-ios-tab-color-inactive: $tab-inactive;
-$tabs-wp-tab-color-inactive: $tab-inactive;
 
 $tabs-ios-tab-padding: 15px 0;
 
