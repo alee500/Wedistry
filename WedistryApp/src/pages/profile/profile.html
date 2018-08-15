@@ -3,12 +3,38 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Profile</ion-title>
+  	<button ion-button clear class="top-button">
+			<ion-icon name="wed-home" class="top-icon home"></ion-icon>
+		</button>
+		<button ion-button clear class="top-button">
+			<ion-icon name="wed-invitations" class="top-icon invitations"></ion-icon>
+		</button>
+		<button ion-button clear class="top-button">
+			<ion-icon name="wed-rsvp" class="top-icon rsvp"></ion-icon>
+		</button>
+		<button ion-button clear class="top-button">
+			<ion-icon name="wed-registry" class="top-icon registry"></ion-icon>
+		</button>
+		<button ion-button clear class="top-button">
+			<ion-icon name="wed-calendar" class="top-icon calendar"></ion-icon>
+		</button>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding class="app-content">
-	<div class="app-main profile">
-		<h3>Profile</h3>
+	<div class="app-main">
+		<div class="app-wrapper">
+			<h3>Choose your hashtag</h3>
+			<div class="hashtag">
+				<span>#</span><input type="text" />
+			</div>
+			<h4>Some examples might be:</h4>
+			<p>#ScottAndSally</p>
+			<p>#JonesJuneWedding</p>
+			<p>#MontanaMarriage</p>
+			<div class="wed-submit">
+				<button>Next Step ></button>
+			</div>
+		</div>
 	</div>
 </ion-content>
